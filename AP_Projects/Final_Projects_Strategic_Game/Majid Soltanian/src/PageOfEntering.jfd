@@ -1,0 +1,603 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.defaultVariableModifiers": 0
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"undecorated": true
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\icons8_poison_48px_1.png" )
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 0
+			}
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "backgroundPanel"
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 0
+				}
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfPitt"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Pitt\\SCML_Edit\\1_head_92.png" )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 200
+					"y": 305
+					"width": 100
+					"height": 100
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameOfPitt"
+					"text": "<html> Name :  <font color=\"630023\";\"red\"> Pitt </font> "
+					"font": &Font0 new java.awt.Font( "Viner Hand ITC", 1, 18 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 310
+					"width": 160
+					"y": 305
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfPitt"
+					"text": "<html>Health : <font color=\"630023\";\"red\"> 50 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 335
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "powerOfPitt"
+					"text": "<html>Power : <font color=\"630023\";\"red\"> 10 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 365
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "speedOfPitt"
+					"text": "<html>Speed : <font color=\"630023\";\"red\"> 50 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 395
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfGeorge"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\George\\SCML_Edit\\1_head_92.png" )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 200
+					"y": 455
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameOfGeorge"
+					"text": "<html>Name : <font color=\"DF1D1D\";\"red\"> George </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 450
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "powerOfGeorge"
+					"text": "<html>Power : <font color=\"DF1D1D\";\"red\"> 20 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"y": 510
+					"x": 310
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfGeorge"
+					"text": "<html>Health : <font color=\"DF1D1D\";\"red\"> 40 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 480
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "speedOfGeorge"
+					"text": "<html>Speed : <font color=\"DF1D1D\";\"red\"> 40 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 540
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfWilliam"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\William\\SCML_Edit\\1_head_92.png" )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 200
+					"y": 595
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameOfWilliam"
+					"text": "<html>Name : <font color=\"F2E8B3\";\"red\"> William </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 590
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfWilliam"
+					"text": "<html>Health : <font color=\"F2E8B3\";\"red\"> 30 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 620
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "powerOfWilliam"
+					"text": "<html>Power : <font color=\"F2E8B3\";\"red\"> 30 </font> "
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 650
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "speedOfWilliam"
+					"text": "<html>Speed : <font color=\"F2E8B3\";\"red\"> 30 </font>"
+					"font": #Font0
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 310
+					"y": 680
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfPatinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Patinga\\SCML_Edit\\2_head_92.png" )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 700
+					"y": 310
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameOfPatinga"
+					"text": "<html> نام :   <font color=\"606060\";\"red\"> پاتینگا </font> "
+					"font": &Font1 new java.awt.Font( "Urdu Typesetting", 1, 24 )
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 305
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfPatinga"
+					"text": "<html> سلامت :   <font color=\"606060\";\"red\"> ۵۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 335
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "powerOfPatinga"
+					"text": "<html> قدرت :   <font color=\"606060\";\"red\"> ۱۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 365
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "speedOfPatinga"
+					"text": "<html> سرعت :   <font color=\"606060\";\"red\"> ۵۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 395
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfGhatinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Ghatinga\\SCML_Edit\\1_head_92.png" )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 700
+					"y": 455
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameOfGhatinga"
+					"text": "<html> نام :   <font color=\"443C0C\";\"red\"> قاطینگا </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 450
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfGhatinga"
+					"text": "<html> سلامت :   <font color=\"443C0C\";\"red\"> ۴۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 480
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "powerOfGhatinga"
+					"text": "<html> قدرت :   <font color=\"443C0C\";\"red\"> ۲۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 510
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "speedOfGhatinga"
+					"text": "<html> سرعت :   <font color=\"443C0C\";\"red\"> ۴۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 540
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfWitinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Witinga\\SCML_Edit\\3_head_92.png" )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 700
+					"y": 600
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameOfWitinga"
+					"text": "<html> نام :   <font color=\"754551\";\"red\"> ویتینگا </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 590
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfWitinga"
+					"text": "<html> سلامت :   <font color=\"754551\";\"red\"> ۳۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 620
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "powerOfWitinga"
+					"text": "<html> قدرت :   <font color=\"754551\";\"red\"> ۳۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 650
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "speedOfWitinga"
+					"text": "<html> سرعت :   <font color=\"754551\";\"red\"> ۳۰ </font> "
+					"font": #Font1
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 30
+					"x": 530
+					"y": 680
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "C"
+					"text": "C"
+					"font": &Font2 new java.awt.Font( "Viner Hand ITC", 1, 48 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"y": 30
+					"height": 70
+					"width": 45
+					"x": 505
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "L"
+					"text": "L"
+					"font": #Font2
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 70
+					"y": 30
+					"x": 540
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "A"
+					"text": "A"
+					"font": #Font2
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 70
+					"x": 576
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "S"
+					"text": "S"
+					"font": #Font2
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 70
+					"x": 616
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "H"
+					"text": "H"
+					"font": #Font2
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 70
+					"x": 650
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "gameOver"
+					"text": "GAME OVER"
+					"font": new java.awt.Font( "Viner Hand ITC", 1, 52 )
+					"foreground": new java.awt.Color( 171, 32, 32, 255 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 350
+					"height": 70
+					"x": 340
+					"y": 300
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "result"
+					"text": "Pirates win by 30 points and Giants lose by 10 points"
+					"font": new java.awt.Font( "Viner Hand ITC", 1, 24 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 700
+					"height": 70
+					"x": 205
+					"y": 375
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "logoOfGame"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\icons8_poison_96px.png" )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 390
+					"y": 25
+					"width": 100
+					"height": 100
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "designer"
+					"text": "Designed by Majid Soltanian"
+					"font": new java.awt.Font( "Andalus", 1, 18 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 505
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "version"
+					"text": "V 1.01.001"
+					"font": new java.awt.Font( "Andalus", 1, 14 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 226
+					"height": 28
+					"x": 505
+					"y": 125
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "No."
+					"font": &Font3 new java.awt.Font( "Viner Hand ITC", 1, 12 )
+					"horizontalAlignment": 0
+					"border": &MatteBorder0 new javax.swing.border.MatteBorder( 0, 0, 1, 1, sfield java.awt.Color black )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 260
+					"y": 480
+					"width": 70
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Pitt"
+					"font": #Font3
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+					"foreground": new java.awt.Color( 99, 0, 35, 255 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 330
+					"y": 480
+					"width": 70
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "George"
+					"font": #Font3
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+					"foreground": new java.awt.Color( 223, 29, 29, 255 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 400
+					"y": 480
+					"width": 70
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "William"
+					"font": #Font3
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+					"foreground": new java.awt.Color( 242, 232, 179, 255 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 470
+					"y": 480
+					"width": 70
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Patinga"
+					"font": #Font3
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+					"foreground": new java.awt.Color( 96, 96, 96, 255 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 540
+					"y": 480
+					"width": 70
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Ghatinga"
+					"font": #Font3
+					"horizontalAlignment": 0
+					"border": #MatteBorder0
+					"foreground": new java.awt.Color( 68, 60, 12, 255 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 610
+					"y": 480
+					"width": 70
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Witinga"
+					"font": #Font3
+					"horizontalAlignment": 0
+					"border": new javax.swing.border.MatteBorder( 0, 0, 1, 0, sfield java.awt.Color black )
+					"foreground": new java.awt.Color( 117, 69, 81, 255 )
+					"visible": false
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 680
+					"y": 480
+					"width": 70
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\icons8_close_window_32px.png" )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label8MouseClicked", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "label8MouseEntered", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "label8MouseExited", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 960
+					"y": 5
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backgroundLabel"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\BACKGROUND.png" )
+					"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color white )
+					"opaque": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 1000
+					"height": 729
+					"y": 0
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1000
+				"height": 729
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1000, 760 )
+		} )
+	}
+}

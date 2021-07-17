@@ -1,0 +1,496 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.defaultVariableModifiers": 0
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"$locationPolicy": 1
+			"undecorated": true
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\icons8_poison_48px_1.png" )
+			auxiliary() {
+				"JavaCodeGenerator.variableModifiers": 0
+			}
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "backgroundPanel"
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, sfield java.awt.Color white )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 0
+				}
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "pitt"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Pitt\\PNG\\2_entity_000_WALK_000.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "pittMouseClicked", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "pittMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 284
+					"height": 240
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfPitt"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Pitt\\SCML_Edit\\1_head_92.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 15
+					"y": 865
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfPitt"
+					"text": "Health : "
+					"font": &Font0 new java.awt.Font( "Viner Hand ITC", 1, 18 )
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 115
+					"y": 880
+					"width": 140
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "xCenterOfPitt"
+					"text": "x Center :"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 115
+					"y": 910
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "yCenterOfPitt"
+					"text": "y Center :"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 115
+					"y": 940
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "george"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\George\\PNG\\3_3-PIRATE_WALK_000.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "georgeMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 264
+					"height": 250
+					"x": 0
+					"y": 240
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfGeorge"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\George\\SCML_Edit\\1_head_92.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 270
+					"y": 875
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfGeorge"
+					"text": "Health : "
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 370
+					"y": 880
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "xCenterOfGeorge"
+					"text": "x Center :"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 370
+					"y": 910
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "yCenterOfGeorge"
+					"text": "y Center :"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 370
+					"y": 940
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "william"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\William\\PNG\\1_entity_000_WALK_000.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "williamMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 310
+					"height": 258
+					"y": 490
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfWilliam"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\William\\SCML_Edit\\1_head_92.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 525
+					"y": 875
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfWilliam"
+					"text": "Health : "
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 625
+					"y": 880
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "xCenterOfWillim"
+					"text": "x Center :"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 625
+					"y": 910
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "yCenterOfWillim"
+					"text": "y Center :"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 625
+					"y": 940
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfPirates"
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"text": "<html> O <br/> O <br/> O 120"
+					"font": &Font1 new java.awt.Font( "Viner Hand ITC", 1, 18 )
+					"horizontalAlignment": 0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 780
+					"y": 875
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "patinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Patinga\\PNG\\Troll_02_1_WALK_000.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "patingaMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 320
+					"height": 200
+					"x": 1480
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfPatinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Patinga\\SCML_Edit\\2_head_92.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"y": 875
+					"x": 1685
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfPatinga"
+					"text": "سلامت :  ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰"
+					"font": &Font2 new java.awt.Font( "Urdu Typesetting", 1, 22 )
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1535
+					"y": 875
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "xCenterOfPatinga"
+					"text": "طول مرکز : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1535
+					"y": 905
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "yCenterOfPatinga"
+					"text": "عرض مرکز : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"y": 935
+					"x": 1535
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ghatinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Ghatinga\\PNG\\Troll_01_1_WALK_000.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "ghatingaMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 320
+					"height": 200
+					"x": 1480
+					"y": 290
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfGhatinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Ghatinga\\SCML_Edit\\1_head_92.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"y": 875
+					"x": 1430
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfGhatinga"
+					"text": "سلامت : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1280
+					"y": 875
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "xCenterOfGhatinga"
+					"text": "طول مرکز : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1280
+					"y": 905
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "yCenterOfGhatinga"
+					"text": "عرض مرکز : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1280
+					"y": 935
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "witinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Witinga\\PNG\\Troll_03_1_WALK_000.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "witingaMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 320
+					"height": 200
+					"x": 1480
+					"y": 546
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "headOfWitinga"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\Witinga\\SCML_Edit\\3_head_92.png" )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"y": 875
+					"x": 1175
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfWitinga"
+					"text": "سلامت : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1025
+					"y": 875
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "xCenterOfWitinga"
+					"text": "طول مرکز : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1025
+					"y": 905
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "yCenterOfWitinga"
+					"text": "عرض مرکز : "
+					"font": #Font2
+					"horizontalAlignment": 11
+					"verticalAlignment": 3
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 140
+					"height": 30
+					"x": 1025
+					"y": 935
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "healthOfGiants"
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"text": "<html> O <br/> O <br/> O 120"
+					"font": #Font1
+					"horizontalAlignment": 0
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 100
+					"height": 100
+					"x": 920
+					"y": 875
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "mute"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\icons8_mute_32px_2.png" )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "muteMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 886
+					"y": 900
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator1"
+					"orientation": 1
+					"background": sfield java.awt.Color white
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 900
+					"height": 1000
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator2"
+					"background": sfield java.awt.Color white
+					"foreground": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 850
+					"width": 1800
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backgroundLabel2"
+					"border": new javax.swing.border.MatteBorder( 2, 1, 1, 1, sfield java.awt.Color white )
+					"horizontalAlignment": 0
+					"background": new java.awt.Color( 255, 255, 255, 90 )
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"opaque": true
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 1800
+					"height": 1000
+					"x": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"background": new java.awt.Color( 234, 187, 90, 255 )
+					"opaque": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 260
+					"height": 55
+					"y": 2
+					"x": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"background": &Color0 new java.awt.Color( 224, 162, 61, 255 )
+					"opaque": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 245
+					"y": 455
+					"width": 45
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\IntlijProjects\\Project\\ImagesOfProject\\BACKGROUND2.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 300
+					"height": 400
+					"y": 8
+					"x": 2
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"background": #Color0
+					"opaque": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 245
+					"y": 1460
+					"width": 45
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "backgroundLabel"
+					"border": new javax.swing.border.MatteBorder( 2, 2, 2, 2, sfield java.awt.Color white )
+					"horizontalAlignment": 11
+					"background": new java.awt.Color( 224, 162, 61, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Sun Media\\Desktop\\BACKGROUND1.png" )
+					"opaque": true
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 0
+					}
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backgroundLabelMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 1800
+					"height": 1020
+					"y": -20
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1800
+				"height": 1000
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 5 )
+			"size": new java.awt.Dimension( 1800, 1030 )
+		} )
+	}
+}
