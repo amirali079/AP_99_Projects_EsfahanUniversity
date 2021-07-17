@@ -1,0 +1,8 @@
+Team A
+Total score: 125
+Heroes:
+fire: 60ice: 0rock: 20wind: 45
+Team B
+Total score: 125
+Heroes:
+fire: 60ice: 0rock: 20wind: 30
