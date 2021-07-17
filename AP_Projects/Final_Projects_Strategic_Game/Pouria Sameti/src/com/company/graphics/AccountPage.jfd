@@ -1,0 +1,126 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2:::::x, comp panel3::l:::x}"
+			"$verticalGroup": "par l {seq t {comp panel2:::p::p, space s:::p, comp panel3:::::x}}"
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/swords.png" )
+			"title": "Mini Battle"
+			"defaultCloseOperation": 3
+			"$sizePolicy": 1
+			"undecorated": true
+			"background": new java.awt.Color( 51, 0, 51, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:255:p, space ::622:x, comp label2:::p:39:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp label2:::::x}, space :::p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 0, 0, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Account Menu"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:65:p, comp newGameBTN:::p:214:p, space :p:85:p, comp deleteBTN:::p:214:p, space ::92:x, comp backBTN:::p:214:p, space :p:44:p}, seq l {space :p:137:p, par l {seq {comp label3:::p:142:p, space :::p, comp winsLBL:::p:255:p, space ::388:x}, seq {par l {seq {comp label5:::p:142:p, space :::p, comp gamesLBL:::p:255:p}, seq {comp label4:::p:142:p, space :::p, comp lossesLBL:::p:255:p}}, space :0:388:x}}}}"
+				"$verticalGroup": "par l {seq l {space :p:50:p, par b {comp label3::b:p::p, comp winsLBL::b:p::p}, space s:::p, par b {comp label4::b:p::p, comp lossesLBL::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp gamesLBL::b:p::p}, space ::141:x, par b {comp backBTN::b:p:63:p, comp newGameBTN::b:p:63:p, comp deleteBTN::b:p:63:p}, space :p:26:p}}"
+			} ) {
+				name: "panel3"
+				"background": new java.awt.Color( 0, 0, 102, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "newGameBTN"
+					"text": "New Game"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"background": new java.awt.Color( 0, 71, 0, 255 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/yellow plus.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "newGameBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backBTN"
+					"text": "Back"
+					"font": #Font1
+					"foreground": &Color0 new java.awt.Color( 255, 255, 255, 255 )
+					"background": new java.awt.Color( 204, 51, 0, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/left.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Wins"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/trophy.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Losses"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/skull.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "winsLBL"
+					"text": "Text"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lossesLBL"
+					"text": "Text"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "deleteBTN"
+					"text": "Delete Account"
+					"font": #Font1
+					"foreground": #Color0
+					"background": new java.awt.Color( 102, 0, 0, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/delete.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Games"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/joystick.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "gamesLBL"
+					"text": "Text"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 930, 530 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

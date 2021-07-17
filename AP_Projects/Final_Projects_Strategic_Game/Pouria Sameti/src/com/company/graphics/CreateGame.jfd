@@ -1,0 +1,245 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2:::::x, comp panel3::l:::x}"
+			"$verticalGroup": "par l {seq t {comp panel2:::p::p, space s:::p, comp panel3:::::x}}"
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/swords.png" )
+			"title": "Mini Battle"
+			"defaultCloseOperation": 3
+			"$sizePolicy": 1
+			"undecorated": true
+			"background": new java.awt.Color( 51, 0, 51, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:255:p, space ::622:x, comp label2:::p:39:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp label2:::::x}, space :::p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 0, 0, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Craete Game Menu"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:30:p, par l {comp label8:::p:229:p, seq l {par t:::p {comp label7::l::183:x, comp label6::l::183:x, comp label5::l::183:x, comp label14::l::183:x, comp label4::l::183:x}, space :::p, par l {comp gamerFireNumberSPN:::p:221:p, comp gamerWindNumberSPN:::p:221:p, comp gamerIceNumberSPN:::p:221:p, comp gamerEarthNumberSPN:::p:221:p, seq l {space :p:20:p, comp label16:::p::p, space :::p, comp gamerXCastle:::p:65:p, space :p:27:p, comp label17:::p::p, space :::p, comp gamerYCastle:::p:65:p}}}, comp backBTN::l:p:183:p}, space :p:18:p, comp label3:::p:10:p, space s:::p, par l {comp label9:::p:229:p, seq {comp label11:::p:183:p, space :::p, comp EnemyWindNumberSPN:::p:221:p}, seq {comp label12:::p:183:p, space :::p, comp EnemyIceNumberSPN:::p:221:p}, par t:l::p {seq {comp label10:::p:183:p, space :::x, comp EnemyFireNumberSPN:::p:221:p}, seq l {par t:::p {comp label15::l::183:x, comp label13::l::183:x}, space :::p, par l {seq {comp label18:::p::p, space :::p, comp enemyXCastle:::p:65:p, space :p:43:p, comp label19:::p::p, space :::p, comp enemyYCastle:::p:65:p}, comp EnemyEarthNumberSPN:::p:221:p}}, comp finishBTN::t:p:183:p}}, space ::32:x}}"
+				"$verticalGroup": "par l {comp label3::t::490:x, seq {space :16:16:p, par l {seq l {comp label8:::p::p, space s:::p, par b {comp label4::b:p::p, comp gamerFireNumberSPN::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp gamerWindNumberSPN::b:p::p}, space s:::p, par b {comp label6::b:p::p, comp gamerIceNumberSPN::b:p::p}, space s:::p, par b {comp label7::b:p::p, comp gamerEarthNumberSPN::b:p::p}, space s:::p, par b {comp label14::b:p::p, comp label16::b:p::p, comp gamerXCastle::b:p::p, comp label17::b:p::p, comp gamerYCastle::b:p::p}}, seq l {comp label9:::p::p, space s:::p, par b {comp label10::b:p::p, comp EnemyFireNumberSPN::b:p::p}, space s:::p, par b {comp label11::b:p::p, comp EnemyWindNumberSPN::b:p::p}, space s:::p, par b {comp label12::b:p::p, comp EnemyIceNumberSPN::b:p::p}, space s:::p, par b {comp label13::b:p::p, comp EnemyEarthNumberSPN::b:p::p}, space s:::p, par b {comp label15::b:p::p, comp label18::b:p::p, comp enemyXCastle::b:p::p, comp label19::b:p::p, comp enemyYCastle::b:p::p}}}, space ::52:x, par l {seq t {comp backBTN:::p:63:p, space :p:24:p}, seq t {comp finishBTN:::p:63:p, space :p:32:p}}}}"
+			} ) {
+				name: "panel3"
+				"background": new java.awt.Color( 0, 0, 102, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "finishBTN"
+					"text": "Finish"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"background": new java.awt.Color( 0, 0, 102, 255 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/check 2.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "finishBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					"opaque": true
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "Fire Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini gamer -fire knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Wind Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini gamer - wind knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Ice Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini gamer - ice knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "Earth Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini gamer - earth knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "Gamer"
+					"font": &Font2 new java.awt.Font( "Myanmar Text", 0, 25 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/smile.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Enemy"
+					"font": #Font2
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/enemy.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "Fire Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini enemy - fire knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "Wind Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini enemy - wind knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "Ice Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini enemy - ice knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "Earth Knight"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini enemy - earth knight.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"text": "Castle Location"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini castle.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label15"
+					"text": "Castle Location"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/mini castle.png" )
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "gamerFireNumberSPN"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+					"cursor": &Cursor1 new java.awt.Cursor( 12 )
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "gamerWindNumberSPN"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "gamerIceNumberSPN"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+					"cursor": &Cursor2 new java.awt.Cursor( 12 )
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "gamerEarthNumberSPN"
+					"cursor": #Cursor2
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "gamerXCastle"
+					"model": new javax.swing.SpinnerNumberModel( 100, 0, 350, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "gamerYCastle"
+					"model": new javax.swing.SpinnerNumberModel( 50, 50, 420, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label16"
+					"text": "X"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label17"
+					"text": "Y"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label18"
+					"text": "X"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "enemyXCastle"
+					"model": new javax.swing.SpinnerNumberModel( 351, 351, 700, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label19"
+					"text": "Y"
+					"font": #Font0
+					"foreground": sfield java.awt.Color white
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "enemyYCastle"
+					"model": new javax.swing.SpinnerNumberModel( 50, 50, 420, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "EnemyFireNumberSPN"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "EnemyWindNumberSPN"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "EnemyIceNumberSPN"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "EnemyEarthNumberSPN"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 10, 1 )
+					"cursor": #Cursor1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "backBTN"
+					"text": "Back"
+					"font": #Font1
+					"background": new java.awt.Color( 153, 51, 0, 255 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/left.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backBTNActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 930, 590 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

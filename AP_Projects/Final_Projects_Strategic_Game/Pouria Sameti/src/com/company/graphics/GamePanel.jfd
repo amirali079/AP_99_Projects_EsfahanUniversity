@@ -1,0 +1,140 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel2:::::x, seq {comp gamePanel:::p:924:p, space s:::p, comp panel3:::::x}}"
+			"$verticalGroup": "par l {seq t {comp panel2:::p::p, space s:::p, par l {comp gamePanel:::p:635:p, comp panel3:::p::p}}}"
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/swords.png" )
+			"title": "Mini Battle"
+			"defaultCloseOperation": 3
+			"$sizePolicy": 1
+			"undecorated": true
+			"background": new java.awt.Color( 51, 0, 51, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp label1:::p:255:p, space ::957:x, comp label2:::p:39:p, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l {comp label1:::::x, comp label2:::::x}, space :::p}}"
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 0, 0, 51, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Game Panel"
+					"font": new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/close.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+				name: "gamePanel"
+				"background": new java.awt.Color( 0, 0, 102, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.variableModifiers": 9
+				}
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq l {space :p:90:p, par l {par l:::p {comp continueBTN::::160:x, comp playBTN:::::x}, comp exitBTN::l:p:160:p, comp pauseBTN::l:p:160:p}}, seq l {space :::p, comp label5:::p:255:p}, seq l {space :::p, comp label3:::p:255:p}, seq l {space :::p, comp showWinner:::p:268:p}, seq l {space :::p, comp GamerPB:::p:282:p}, seq l {space :::p, comp EnemyPB:::p:282:p}}, space ::33:x}}"
+				"$verticalGroup": "par l {seq l {space :p:19:p, comp playBTN:::p:40:p, space s:::p, comp continueBTN:::p:40:p, space s:::p, comp pauseBTN:::p:40:p, space :p:12:p, comp exitBTN:::p:40:p, space ::28:x, comp label3:::p::p, space :::p, comp GamerPB:::p:29:p, space :p:26:p, comp label5:::p::p, space :p:3:p, comp EnemyPB:::p:29:p, space s:::p, comp showWinner:::p:169:p, space :p:18:p}}"
+			} ) {
+				name: "panel3"
+				"background": new java.awt.Color( 51, 0, 0, 255 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "playBTN"
+					"text": "Play"
+					"font": &Font0 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"background": new java.awt.Color( 0, 0, 51, 255 )
+					"foreground": sfield java.awt.Color white
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/play-button.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "playBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "continueBTN"
+					"text": "Continue"
+					"font": #Font0
+					"background": new java.awt.Color( 25, 0, 25, 255 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/arrows.png" )
+					"enabled": false
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "continueBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "exitBTN"
+					"text": "Exit"
+					"font": #Font0
+					"background": new java.awt.Color( 81, 0, 0, 255 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/stand-by.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Gamer Status"
+					"font": &Font1 new java.awt.Font( "Myanmar Text", 0, 20 )
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/smile.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Enemy Status"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/enemy.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "showWinner"
+					"font": #Font1
+					"foreground": sfield java.awt.Color white
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 9
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "pauseBTN"
+					"text": "Pause"
+					"font": #Font0
+					"background": new java.awt.Color( 0, 56, 0, 255 )
+					"foreground": sfield java.awt.Color white
+					"cursor": #Cursor0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/icons/pause.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pauseBTNActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JProgressBar" ) {
+					name: "GamerPB"
+					"background": new java.awt.Color( 0, 51, 0, 255 )
+					"stringPainted": true
+					"foreground": sfield java.awt.Color black
+					"value": 100
+					"opaque": true
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 9
+					}
+				} )
+				add( new FormComponent( "javax.swing.JProgressBar" ) {
+					name: "EnemyPB"
+					"background": new java.awt.Color( 0, 20, 10, 255 )
+					"stringPainted": true
+					"foreground": sfield java.awt.Color black
+					"value": 100
+					"opaque": true
+					auxiliary() {
+						"JavaCodeGenerator.variableModifiers": 9
+					}
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 1265, 735 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
