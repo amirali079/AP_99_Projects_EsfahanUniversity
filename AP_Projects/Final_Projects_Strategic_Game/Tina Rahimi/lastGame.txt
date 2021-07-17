@@ -1,0 +1,8 @@
+T1 Blue 20
+T2 Black 20
+C1 11 426 50
+C2 898 399 10
+Fire Blue 797 361 100 4
+Fire Blue 793 294 50 6
+Fire Black 344 93 100 0
+Wind Blue 814 352 30 10
