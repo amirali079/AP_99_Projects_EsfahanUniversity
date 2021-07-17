@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="TransactionTable" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.Transactions">
+   <columns>
+      <TableColumn fx:id="Amount" prefWidth="77.0" text="Amount" />
+      <TableColumn fx:id="Type" prefWidth="84.0" text="Type" />
+      <TableColumn fx:id="Date" prefWidth="107.0" text="Date" />
+      <TableColumn fx:id="Bank" minWidth="8.0" prefWidth="99.0" text="Bank " />
+      <TableColumn fx:id="account" minWidth="8.0" prefWidth="99.0" text="Bank account" />
+      <TableColumn fx:id="City" minWidth="8.0" prefWidth="99.0" text="City" />
+   </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>
