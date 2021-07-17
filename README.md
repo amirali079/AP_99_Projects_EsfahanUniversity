@@ -5,7 +5,7 @@ Professor : Dr.Ramezani
 Spring 99-00
 
 Teacher Assistants : 
-  head of group : Amirali Goli
+  + head of group : Amirali Goli
   Arshia Hemat , Ebrahim Ghafourzade , Mohamad Farzan
   Mahla Shamsabadi , Zahra Ashrafi , Maryam Shafizadegan
   Ali Foladgar , Mehrdad Ghasabi , Meqdad Dehghan , Reza Mehtari
