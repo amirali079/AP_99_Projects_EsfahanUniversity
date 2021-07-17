@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="BankAccountsTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.BankAccounts">
+   <columns>
+      <TableColumn fx:id="Owner" prefWidth="127.0" text="Owner" />
+      <TableColumn fx:id="Username" prefWidth="43.0" text="Username" />
+      <TableColumn fx:id="Pass" prefWidth="77.0" text="Password" />
+      <TableColumn fx:id="Bank" prefWidth="84.0" text="Bank" />
+      <TableColumn fx:id="Inventory" prefWidth="107.0" text="Inventory" />
+      <TableColumn fx:id="Time" minWidth="8.0" prefWidth="99.0" text="RemainTime" />
+      <TableColumn fx:id="Active" prefWidth="100.0" text="Active" />
+   </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>

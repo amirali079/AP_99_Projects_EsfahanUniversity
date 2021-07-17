@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="RailTable" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.Railways">
+   <columns>
+      <TableColumn fx:id="ID" prefWidth="43.0" text="ID" />
+      <TableColumn fx:id="Name" prefWidth="77.0" text="Name" />
+      <TableColumn fx:id="city" prefWidth="84.0" text="City" />
+      <TableColumn fx:id="Address" prefWidth="107.0" text="Address" />
+      <TableColumn fx:id="Cost" prefWidth="100.0" text="Cost" />
+      <TableColumn fx:id="Area" prefWidth="127.0" text="Area" />
+      <TableColumn fx:id="Vehicles" minWidth="8.0" prefWidth="99.0" text="Vehicles" />
+      <TableColumn fx:id="InputRails" prefWidth="75.0" text="Input Rails" />
+      <TableColumn fx:id="OutputRails" prefWidth="75.0" text="Output Rails" />
+   </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>

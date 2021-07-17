@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="CitizensTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.Citizens">
+   <columns>
+      <TableColumn fx:id="ID" prefWidth="43.0" text="ID" />
+      <TableColumn fx:id="Name" prefWidth="77.0" text="Name" />
+      <TableColumn fx:id="Family" prefWidth="84.0" text="Family" />
+      <TableColumn fx:id="BirthYear" prefWidth="107.0" text="BirthYear" />
+      <TableColumn fx:id="BirthPlace" minWidth="8.0" prefWidth="99.0" text="BirthPlace" />
+      <TableColumn fx:id="Gender" prefWidth="127.0" text="Gender" />
+      <TableColumn fx:id="Job" prefWidth="36.0" text="Job" />
+      <TableColumn fx:id="Rights" prefWidth="100.0" text="Rights" />
+      <TableColumn fx:id="NotHire" prefWidth="100.0" text="Not Hire" />
+   </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>

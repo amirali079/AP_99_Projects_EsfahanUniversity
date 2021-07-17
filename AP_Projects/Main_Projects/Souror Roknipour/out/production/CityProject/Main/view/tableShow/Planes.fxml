@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="PlaneTable" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.Planes">
+   <columns>
+      <TableColumn fx:id="ID" prefWidth="43.0" text="ID" />
+      <TableColumn fx:id="price" prefWidth="77.0" text="price" />
+      <TableColumn fx:id="capacity" prefWidth="84.0" text="capacity" />
+      <TableColumn fx:id="company" prefWidth="107.0" text="company" />
+      <TableColumn fx:id="fuel" minWidth="8.0" prefWidth="99.0" text="fuel type" />
+      <TableColumn fx:id="seatClass" prefWidth="127.0" text="seatClass" />
+      <TableColumn fx:id="crews" prefWidth="36.0" text="crews" />
+      <TableColumn fx:id="LandingLen" prefWidth="100.0" text="Landing len" />
+      <TableColumn fx:id="Height" prefWidth="100.0" text="flight Height" />
+      <TableColumn fx:id="Ticket" prefWidth="100.0" text="Ticket Cost" />
+   </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>

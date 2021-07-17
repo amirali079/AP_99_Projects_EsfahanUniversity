@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="boatTable" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.controller.Buses">
+   <columns>
+      <TableColumn fx:id="ID" prefWidth="43.0" text="ID" />
+      <TableColumn fx:id="price" prefWidth="77.0" text="price" />
+      <TableColumn fx:id="capacity" prefWidth="84.0" text="capacity" />
+      <TableColumn fx:id="company" prefWidth="107.0" text="company" />
+      <TableColumn fx:id="speed" prefWidth="100.0" text="speed" />
+      <TableColumn fx:id="fuel" minWidth="8.0" prefWidth="99.0" text="fuel type" />
+      <TableColumn fx:id="bustype" prefWidth="127.0" text="bus type" />
+      <TableColumn fx:id="Ticket" prefWidth="100.0" text="Ticket Cost" />
+   </columns>
+   <columnResizePolicy>
+      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+   </columnResizePolicy>
+</TableView>
