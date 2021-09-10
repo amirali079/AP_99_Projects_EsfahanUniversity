@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectPositionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/selectPositionToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/selectPositionToolbarBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorPrimary"
+        android:src="?attr/homeAsUpIndicator"
+        app:layout_constraintBottom_toBottomOf="@+id/selectPositionToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/selectPositionToolbar"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/selectPositionToolbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectPositionToolbar"
+        app:layout_constraintStart_toEndOf="@+id/selectPositionToolbarBackButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/team2HeroesGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="selectPosition9,selectPosition2,selectPosition3,selectPosition8,selectPosition5,selectPosition6,selectPosition4,selectPosition1,selectPosition7,selectPosition0"
+        app:layout_constraintBottom_toBottomOf="@+id/selectPosition7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionToolbar" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/team2CastleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="selectPosition2,selectPosition3,selectPosition4,selectPosition1,selectPosition0"
+        app:layout_constraintBottom_toBottomOf="@+id/selectPosition2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionToolbar" />
+
+    <ImageButton
+        android:id="@+id/selectPosition0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionToolbar" />
+
+    <ImageButton
+        android:id="@+id/selectPosition1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintEnd_toStartOf="@+id/guideline37"
+        app:layout_constraintStart_toStartOf="@+id/guideline36"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionToolbar" />
+
+    <ImageButton
+        android:id="@+id/selectPosition2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintStart_toStartOf="@+id/guideline37"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionToolbar" />
+
+    <ImageButton
+        android:id="@+id/selectPosition3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="3"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionToolbar" />
+
+    <ImageButton
+        android:id="@+id/selectPosition4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="4"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline39"
+        app:layout_constraintTop_toBottomOf="@+id/selectPositionToolbar" />
+
+    <ImageButton
+        android:id="@+id/selectPosition5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="5"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+
+    <ImageButton
+        android:id="@+id/selectPosition6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="6"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintEnd_toStartOf="@+id/selectPosition7"
+        app:layout_constraintStart_toStartOf="@+id/guideline36"
+        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+
+    <ImageButton
+        android:id="@+id/selectPosition7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="7"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintStart_toStartOf="@+id/guideline37"
+        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+
+    <ImageButton
+        android:id="@+id/selectPosition8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="8"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline40"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/selectPosition9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="9"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline39"
+        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/team1HeroesGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="selectPosition47,selectPosition41,selectPosition44,selectPosition45,selectPosition43,selectPosition46,selectPosition48,selectPosition42,selectPosition49,selectPosition40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <ImageButton
+        android:id="@+id/selectPosition40"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="40"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <ImageButton
+        android:id="@+id/selectPosition41"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="41"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toStartOf="@+id/guideline37"
+        app:layout_constraintStart_toStartOf="@+id/guideline36"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <ImageButton
+        android:id="@+id/selectPosition42"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="42"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintStart_toStartOf="@+id/guideline37"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <ImageButton
+        android:id="@+id/selectPosition43"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="43"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintStart_toStartOf="@+id/guideline38"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <ImageButton
+        android:id="@+id/selectPosition44"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="44"
+        app:layout_constraintBottom_toTopOf="@+id/guideline34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectPosition48"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/team1CastleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="selectPosition47,selectPosition45,selectPosition46,selectPosition48,selectPosition49"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPosition42" />
+
+    <ImageButton
+        android:id="@+id/selectPosition45"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline34" />
+
+    <ImageButton
+        android:id="@+id/selectPosition46"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline37"
+        app:layout_constraintStart_toEndOf="@+id/selectPosition45"
+        app:layout_constraintTop_toTopOf="@+id/guideline34" />
+
+    <ImageButton
+        android:id="@+id/selectPosition47"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="47"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline38"
+        app:layout_constraintStart_toStartOf="@+id/guideline37"
+        app:layout_constraintTop_toTopOf="@+id/guideline34" />
+
+    <ImageButton
+        android:id="@+id/selectPosition48"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline39"
+        app:layout_constraintStart_toEndOf="@+id/selectPosition47"
+        app:layout_constraintTop_toTopOf="@+id/guideline34" />
+
+    <ImageButton
+        android:id="@+id/selectPosition49"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="positionClicked"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/checkbox_off_background"
+        android:tag="49"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectPosition48"
+        app:layout_constraintTop_toTopOf="@+id/guideline34" />
+
+    <TextView
+        android:id="@+id/selectPositionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your castle position"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/selectPositionMainImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectPosition6" />
+
+    <ImageView
+        android:id="@+id/selectPositionMainImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline45"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guideline43"
+        app:layout_constraintTop_toTopOf="@+id/guideline42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selectPositionOKButton"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:text="OK"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/selectPositionMainImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

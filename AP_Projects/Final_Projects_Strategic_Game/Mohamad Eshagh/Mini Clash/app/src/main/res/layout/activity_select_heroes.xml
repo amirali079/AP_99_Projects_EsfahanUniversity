@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectHeroesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/selectHeroesToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesToolbarBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorPrimary"
+        android:src="?attr/homeAsUpIndicator"
+        app:layout_constraintBottom_toBottomOf="@+id/selectHeroesToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/selectHeroesToolbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/selectHeroesToolbar"
+        app:layout_constraintStart_toEndOf="@+id/selectHeroesToolbarBackButton"
+        app:layout_constraintTop_toTopOf="@+id/selectHeroesToolbar" />
+
+    <Button
+        android:id="@+id/selectHeroesOKButton"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:alpha="0.5"
+        android:enabled="false"
+        android:text="OK"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
+    <TextView
+        android:id="@+id/selectHeroesMainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select three heroes"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/selectedHeroesImg1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectHeroesToolbar" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/ice_hero0" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info0"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="0"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/fire_hero0" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/wind_hero0" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="3"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ice_hero1" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info3"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="4"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:srcCompat="@drawable/fire_hero1" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info4"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="5"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:srcCompat="@drawable/wind_hero1" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info5"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="6"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:srcCompat="@drawable/soil_hero0" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info6"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:onClick="selectHero"
+        android:scaleType="fitCenter"
+        android:tag="7"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:srcCompat="@drawable/soil_hero1" />
+
+    <ImageButton
+        android:id="@+id/selectHeroesImg0Info7"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline15"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:srcCompat="@drawable/info_icon2" />
+
+    <ImageButton
+        android:id="@+id/selectedHeroesImg0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="false"
+        android:scaleType="fitCenter"
+        android:tag="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageButton
+        android:id="@+id/deleteSelectedHero0"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:tag="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/delete_info" />
+
+    <ImageButton
+        android:id="@+id/selectedHeroesImg1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="false"
+        android:scaleType="fitCenter"
+        android:tag="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageButton
+        android:id="@+id/deleteSelectedHero1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/delete_info" />
+
+    <ImageButton
+        android:id="@+id/selectedHeroesImg2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="false"
+        android:scaleType="fitCenter"
+        android:tag="2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <ImageButton
+        android:id="@+id/deleteSelectedHero2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:cropToPadding="true"
+        android:onClick="infoClicked"
+        android:scaleType="fitCenter"
+        android:tag="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:srcCompat="@drawable/delete_info" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.40"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.54"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
